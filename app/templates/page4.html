@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display keys</title>
+    <script src="https://kit.fontawesome.com/ce8e52b871.js" crossorigin="anonymous"></script>   
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="../static/css/bootstrap.css" rel="stylesheet">
+    <link href="../static/css/style.css" rel="stylesheet">
+    <link href="../static/css/Lato-Regular.ttf" rel="stylesheet">
+
+    
+    <body class="background-img1">
+    <div>
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" name="page1" href="index.html">PAGE1</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="page2.html" name="page2">PAGE2</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="page3.html" name="page3">PAGE3</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" name="page4" >PAGE4</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="page5.html" name="page5" >PAGE5</a>
+      </ul>
+      </div>
+
+      <div class="Keyss" >
+        <div class="img1-form">
+          <form class="cv" action="{{ url_for('getmem') }}" method="POST">
+        <h2 class="text" > Keys list :</h2>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+          <button type="submit" class="btn btn-primary" id="display all keys last 10 "  >Display All Keys  </button>
+          <button type="submit" class="btn btn-primary" id="clear"  >{{delete}} delete </button>
+
+        </div>
+      
+
+      
+        <div class="container">
+          <table >
+            <tr>
+              <td></td>
+              <td></td>
+              {{  listkey }} 
+              {{cad}}
+               <!-- {{listval }} -->
+            </tr>
+
+          </table>
+
+        </div>
+     </div>
+    </div>
+    </form>
+
+
+
+      <script src="../static/js/bootstrap.js" ></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  </body>
+  </html>

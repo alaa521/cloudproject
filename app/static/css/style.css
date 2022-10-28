@@ -1,0 +1,132 @@
+body {
+  background-color: #f2f2f2;
+  padding: 0;
+  margin: 0;
+  
+  }
+  .background-img{
+    background-image: url("../img/im4.jpg");
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size:cover;
+    height: 625px;
+  }
+  .background-img1{
+    background-image: url("../img/im4.jpg");
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size:cover;
+    height: 625px;
+  }
+  .background-img2{
+    background-image: url("../img/im2.webp");
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size:cover;
+    height: 625px;
+  }
+.nav-item{
+  margin-left: 50px;
+
+}
+.nav-item .nav-link{
+    color: #394b58;
+    font-family: 'Nunito', sans-serif;
+    font-size:larger;
+    font-weight: bold;
+}
+.nav-item .nav-link:hover{
+color: #5793cf;
+
+
+}
+
+.img-form{
+	height: 270px;
+	width: 470px;
+	margin-top: 140px;
+  margin-left: 50px;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #f2f2f2;
+  padding-top: 25px;
+
+  }
+  .img2-form{
+    height: 410px;
+    width: 470px;
+    margin-top: 140px;
+    margin-left: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #c0b0b8;
+    padding-top: 20px;
+  
+    }
+    .img1-form{
+      height: 410px;
+      width: 470px;
+      margin-top: 140px;
+      margin-left: 400px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      background-color:hsl(208, 63%, 88%);
+      padding-top: 20px;
+    
+      }
+  .cv{
+  display: block;
+	width: 400px;
+	margin-left: 25px;
+  margin-top: 10px;
+  }
+  .cv-text{
+    /* font-family: 'Nunito', sans-serif; */
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    margin-left: 70px; 
+    font-size:x-large;
+    font-weight: bold;
+   }
+
+   .text{
+     font-family: 'Courier New', Courier, monospace;
+     font-weight: bolder;
+     margin-top: 20px;
+   }
+   .btn{
+    background-color: #d5ebff;
+    color: black;
+    height: 40px;
+    margin-top: 20px;
+    font-family: 'Courier New', Courier, monospace;
+
+   }
+   .btn:hover{
+    background-color: blue;
+   }
+
+   .btn-1{
+    background-color: #c28dab;
+    color: black;
+    height: 40px;
+    margin-top: 20px;
+    font-family: 'Courier New', Courier, monospace;
+   }
+
+   .btn-1:hover{
+    box-shadow: inset 300px rgb(138, 20, 206);
+   }
+   .Keyss{
+    display:flex;
+    margin-left: 140px;
+    margin-top: 40px;
+
+   }
+   .tb{
+    margin-top: 5px;
+    border:auto solid ;
+    
+   }
+   
+  

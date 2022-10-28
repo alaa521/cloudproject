@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add image</title>
+    <script src="https://kit.fontawesome.com/ce8e52b871.js" crossorigin="anonymous"></script>   
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="../static/css/bootstrap.css" rel="stylesheet">
+    <link href="../static/css/style.css" rel="stylesheet">
+    <link href="../static/css/Lato-Regular.ttf" rel="stylesheet">
+
+    
+<body class="background-img">
+    <div>
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" name="page1" href="#">PAGE1</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="page2.html" name="page2">PAGE2</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="page3.html" name="page3" >PAGE3</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="page4.html" name="page4">PAGE4</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="page5.html" name="page5" >PAGE5</a>
+      </ul>
+
+      <div class="img-form">
+        <h4 class="cv-text"> Welcome to cloud Project</h4>
+    <form class="cv" method="POST" action="{{ url_for('addimg') }}" enctype="multipart/form-data" >
+      <div class="mb-3">
+        <label for="uploadCV" >Enter Key</label>
+        <input type="text" id="keyy" placeholder="Enter KEY" name="keyy" required>
+      </div>
+      <div class="job-text" style="font-family: inherit;">
+        <label for="uploadCV" >Enter image</label>
+        <input type="file" name="image" placeholder="" required="" id="image">
+     </div> 
+        <button type="submit" class="btn btn-warning btn-default " 
+       style="background-color: #5793cf;border-color:#f2f2f2;color:#f2f2f2
+        ;width: 100%;height: 45px; ;margin-top: 10px;font-size: larger; font-weight: bold; font-family: DroidArabicKufiRegular;">
+        <i class="fas fa-location-arrow  Services-icon"></i>
+        <span>SEND</span></button>  
+        {% if sucsess %}
+        <p class=sucsess><strong>status:</strong> {{ sucsess }}
+        {% endif %}      
+       </form>
+      </div>
+    </div>
+
+
+    <script src="../static/js/bootstrap.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+</body>
+</html>
