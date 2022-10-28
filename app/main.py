@@ -1,26 +1,10 @@
-from distutils.command.build_clib import build_clib
-from distutils.command.upload import upload
-from itertools import count
-from multiprocessing.sharedctypes import Value
-from tkinter import Y
-from urllib import response
-from urllib.parse import MAX_CACHE_SIZE
-from wsgiref.validate import validator
-from flask import Flask, Request, redirect, render_template, request, url_for
+from flask import Flask, render_template, request
 import os
-from numpy import size
 from werkzeug.utils import  secure_filename
-from flask import json
 import pymysql.cursors
 import pymysql
 from app import memcache,webapp
-from pymemcache.client.base import Client
-from datetime import datetime
 import time
-import ttl_cache
-from expiringdict import ExpiringDict
-from flask import jsonify
-
 from apscheduler.schedulers.background import BackgroundScheduler
 import atexit
 
